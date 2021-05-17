@@ -1,11 +1,5 @@
 #!/usr/bin/env zsh
 
-set -euo pipefail
-
-# set -x
-# echo "start at: $(date)" >&2
-# exec 2> /tmp/tmux-git-status.log
-
 CURRENT_DIR="$( cd "$( dirname "${(%):-%N}" )" && pwd )"
 source "$CURRENT_DIR/variables.zsh"
 

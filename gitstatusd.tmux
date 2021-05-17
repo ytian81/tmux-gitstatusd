@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
-CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+CURRENT_DIR="$( cd "$( dirname "${(%):-%N}" )" && pwd )"
 gitstatusd="#($CURRENT_DIR/scripts/gitstatusd.zsh)"
-placeholder="\#{gitstatusd}"
+placeholder="#{gitstatusd}"
 
 source $CURRENT_DIR/scripts/shared.zsh
 source $CURRENT_DIR/scripts/install.zsh
