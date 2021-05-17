@@ -5,6 +5,7 @@ gitstatusd="#($CURRENT_DIR/scripts/gitstatusd.zsh)"
 placeholder="\#{gitstatusd}"
 
 source $CURRENT_DIR/scripts/shared.zsh
+source $CURRENT_DIR/scripts/install.zsh
 
 do_interpolation() {
     local string="$1"
